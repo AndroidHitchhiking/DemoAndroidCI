@@ -43,6 +43,7 @@ test:
 #    - ./gradlew clean assemble
     # This will run the tests:
    - ./gradlew assemble connectedDebugAndroidTest -PdisablePreDex --console=plain --info
+   - ./gradlew test
 
   post:
       - cp -r app/build/outputs $CIRCLE_ARTIFACTS
